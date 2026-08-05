@@ -1,0 +1,59 @@
+.two {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 30px;
+background: linear-gradient(to right,
+#ff6b35 30%,
+#ff5c5c 45%,
+#e43f5b 60%,
+#e03955 90%);
+}
+
+.left {
+  flex: 1;
+}
+
+.left h1{
+    color: white;
+    padding: 10px;
+}
+
+
+
+
+.left p {
+  margin: 10px 0;
+  color: #f4f0f0;
+  padding: 5px;
+}
+
+/* Right side Image Styling */
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* .two{
+    display: flex;
+    background-color: red;
+} */
+
+.btn{
+    background-color:#ff6b35;
+    color: white;
+    font-size: 15px;
+    border: 1px solid white;
+    border-radius: 60px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+}
