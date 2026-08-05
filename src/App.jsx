@@ -1,7 +1,7 @@
 import React from 'react';
 import Nav from './componenets/Nav/Nav';
 import Hero from './componenets/Hero/Hero';
-import Features from './componenets/features/Features';
+import Features from './componenets/Features/Features';
 
 
 function App() { 
