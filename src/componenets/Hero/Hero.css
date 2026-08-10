@@ -1,18 +1,8 @@
-/* =========================
-   TWO SECTION
-========================= */
-
 .two {
-  width: 100%;
-  box-sizing: border-box;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  gap: 40px;
-  padding: 50px 5%;
-
+  padding: 50px 30px;
   background: linear-gradient(
     to right,
     #ff6b35 30%,
@@ -23,38 +13,29 @@
 }
 
 .left {
-  width: 50%;
-  flex: 0 0 50%;
+  flex: 1;
 }
 
 .left h1 {
   color: white;
   padding: 10px;
-  margin: 0;
-  font-size: 36px;
 }
 
 .left p {
   margin: 10px 0;
-  padding: 5px;
   color: #f4f0f0;
-  line-height: 1.6;
+  padding: 5px;
 }
 
 .right {
-  width: 50%;
-  flex: 0 0 50%;
-
+  flex: 1;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .right img {
-  width: 100%;
-  max-width: 550px;
+  max-width: 100%;
   height: auto;
-  display: block;
   border-radius: 8px;
 }
 
@@ -62,35 +43,22 @@
   background-color: #ff6b35;
   color: white;
   font-size: 15px;
-
   border: 1px solid white;
   border-radius: 60px;
-
-  padding: 10px 20px;
-
+  padding: 10px;
   margin-left: 10px;
   margin-top: 20px;
-
   font-weight: bold;
   cursor: pointer;
 }
 
 
-/* =========================
-   TABLET
-========================= */
+/* Tablet */
 
-@media screen and (max-width: 900px) {
-
+@media (max-width: 768px) {
   .two {
+    padding: 40px 20px;
     gap: 20px;
-    padding: 40px 4%;
-  }
-
-  .left,
-  .right {
-    width: 50%;
-    flex: 0 0 50%;
   }
 
   .left h1 {
@@ -98,80 +66,77 @@
   }
 
   .left p {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .right img {
-    width: 100%;
+    max-width: 90%;
   }
 }
 
 
-/* =========================
-   MOBILE
-========================= */
+/* Mobile */
 
-@media screen and (max-width: 600px) {
-
+@media (max-width: 600px) {
   .two {
-    width: 100%;
     flex-direction: column;
-    padding: 35px 20px;
-    gap: 30px;
     text-align: center;
+    padding: 40px 20px;
   }
 
-  .left,
-  .right {
+  .left {
     width: 100%;
-    flex: none;
   }
 
   .left h1 {
-    font-size: 26px;
+    font-size: 28px;
     padding: 5px;
   }
 
   .left p {
     font-size: 14px;
-    padding: 5px;
+    line-height: 1.6;
+    padding: 5px 10px;
+  }
+
+  .btn {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .right {
+    width: 100%;
+    margin-top: 20px;
   }
 
   .right img {
     width: 100%;
     max-width: 400px;
   }
-
-  .btn {
-    margin-left: 0;
-  }
 }
 
 
-/* =========================
-   SMALL MOBILE
-========================= */
+/* Small Mobile */
 
-@media screen and (max-width: 400px) {
-
+@media (max-width: 400px) {
   .two {
     padding: 30px 15px;
   }
 
   .left h1 {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .left p {
     font-size: 13px;
   }
 
-  .right img {
-    width: 100%;
+  .btn {
+    font-size: 14px;
+    padding: 9px 15px;
   }
 
-  .btn {
-    font-size: 13px;
-    padding: 9px 18px;
+  .right img {
+    max-width: 100%;
   }
 }
