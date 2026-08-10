@@ -34,19 +34,18 @@
 }
 
 
-/* =========================
-   TABLET
-========================= */
+/* Tablet */
 
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
   .features {
+    width: 90%;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 25px;
     margin: 60px auto;
   }
 
   .feature-card {
-    gap: 14px;
+    gap: 15px;
   }
 
   .lefti {
@@ -63,11 +62,9 @@
 }
 
 
-/* =========================
-   MOBILE
-========================= */
+/* Mobile */
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .features {
     width: 90%;
     grid-template-columns: 1fr;
@@ -76,33 +73,31 @@
   }
 
   .feature-card {
-    padding: 12px 5px;
+    width: 100%;
+    padding: 15px 5px;
     gap: 15px;
   }
 
   .lefti {
-    font-size: 28px;
+    font-size: 30px;
   }
 
   .rightp h3 {
-    font-size: 17px;
-    margin-bottom: 5px;
+    font-size: 18px;
   }
 
   .rightp p {
     font-size: 13px;
-    line-height: 1.5;
   }
 }
 
 
-/* =========================
-   SMALL MOBILE
-========================= */
+/* Small Mobile */
 
-@media (max-width: 400px) {
+@media screen and (max-width: 400px) {
   .features {
-    width: 92%;
+    width: 95%;
+    margin: 30px auto;
   }
 
   .feature-card {
@@ -110,7 +105,7 @@
   }
 
   .lefti {
-    font-size: 25px;
+    font-size: 26px;
   }
 
   .rightp h3 {
