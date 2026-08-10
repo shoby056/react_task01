@@ -2,33 +2,36 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 40px;
+
   padding: 50px 30px;
-background: linear-gradient(to right,
-#ff6b35 30%,
-#ff5c5c 45%,
-#e43f5b 60%,
-#e03955 90%);
+
+  background: linear-gradient(
+    to right,
+    #ff6b35 30%,
+    #ff5c5c 45%,
+    #e43f5b 60%,
+    #e03955 90%
+  );
 }
 
 .left {
   flex: 1;
 }
 
-.left h1{
-    color: white;
-    padding: 10px;
+.left h1 {
+  color: white;
+  padding: 10px;
+  font-size: 36px;
 }
-
-
-
 
 .left p {
   margin: 10px 0;
   color: #f4f0f0;
   padding: 5px;
+  line-height: 1.6;
 }
 
-/* Right side Image Styling */
 .right {
   flex: 1;
   display: flex;
@@ -41,19 +44,112 @@ background: linear-gradient(to right,
   border-radius: 8px;
 }
 
-/* .two{
-    display: flex;
-    background-color: red;
-} */
+.btn {
+  background-color: #ff6b35;
+  color: white;
+  font-size: 15px;
+  border: 1px solid white;
+  border-radius: 60px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  margin-top: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
 
-.btn{
-    background-color:#ff6b35;
-    color: white;
-    font-size: 15px;
-    border: 1px solid white;
-    border-radius: 60px;
-    padding: 10px;
-    margin-left: 10px;
-    margin-top: 20px;
-    font-weight: bold;
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+  .two {
+    gap: 25px;
+    padding: 40px 25px;
+  }
+
+  .left h1 {
+    font-size: 30px;
+  }
+
+  .left p {
+    font-size: 14px;
+  }
+
+  .right img {
+    max-width: 95%;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  .two {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .left h1 {
+    font-size: 28px;
+    padding: 5px;
+  }
+
+  .left p {
+    font-size: 14px;
+    padding: 5px;
+    line-height: 1.6;
+  }
+
+  .btn {
+    margin-left: 0;
+    margin-top: 15px;
+    padding: 10px 20px;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .right img {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+  .two {
+    padding: 30px 15px;
+    gap: 20px;
+  }
+
+  .left h1 {
+    font-size: 24px;
+  }
+
+  .left p {
+    font-size: 13px;
+  }
+
+  .right img {
+    max-width: 100%;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 9px 18px;
+  }
 }
